@@ -47,7 +47,6 @@ public class run {
         if (table.isEmpty()) throw new Exception("ϲ򴳱󣴥𞻥ntry key=\"table\">gl_etlpst</entry>");
         if (!ef.isEmpty()) exclude_flds = ef.split(",");
         else exclude_flds = new String[0];
-//        System.out.println("HOST:" + url  + ", LOGIN: " + user + ", driver:" + driver);
       }catch(Exception e){
     	e.printStackTrace();
         return false;
