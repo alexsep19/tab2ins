@@ -28,8 +28,6 @@ public class run {
         Properties property = new Properties();
         String url = null, user = null, pswd = null, driver = null, ef = null;
       try{
-//		fis = new FileInputStream("connection.properties");
-//		property.load(fis);
     	fis = new FileInputStream(Fn);
         property.loadFromXML(fis);
         fis.close();
