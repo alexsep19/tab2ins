@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+   <entry key="url">jdbc:as400:TB10</entry>
+   <entry key="driver">com.ibm.as400.access.AS400JDBCDriver</entry>
+   <entry key="user">ER22317</entry>
+   <entry key="pswd">cftyujnm2</entry>
+   <entry key="outfile">out.sql</entry>
+   <entry key="table">gl_etlpst</entry>
+   <entry key="where">id in (296573,296574,296575)</entry>
+   <entry key="exclude_flds"></entry><!-- разделитель=,-->
+</properties>
