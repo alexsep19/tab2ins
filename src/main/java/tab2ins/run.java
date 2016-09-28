@@ -106,7 +106,6 @@ public class run {
  	  		  else throw new Exception("type = " + type + " not released");
  	  		} 
  	  		values.replace(values.length()-1, values.length(), ");");
-// 	  		System.out.println(values.toString());
  	  		out.println(values);
   	 	 }
   			
