@@ -40,11 +40,11 @@ public class run {
         where = property.getProperty("where", "").trim();
         outfile = property.getProperty("outfile", "our.sql").trim();
         ef = property.getProperty("exclude_flds", "").trim().trim();
-        if (url.isEmpty()) throw new Exception("ϲ򴳱󣴥𞻥ntry key=\"url\">jdbc:as400:TB10</entry>");
-        if (user.isEmpty()) throw new Exception("ϲ򴳱󣴥𞻥ntry key=\"user\">ER</entry>");
-        if (pswd.isEmpty()) throw new Exception("ϲ򴳱󣴥𞻥ntry key=\"pswd\"></entry>");
-        if (driver.isEmpty()) throw new Exception("ϲ򴳱󣴥𞻥ntry key=\"driver\">com.ibm.as400.access.AS400JDBCDriver</entry>");
-        if (table.isEmpty()) throw new Exception("ϲ򴳱󣴥𞻥ntry key=\"table\">gl_etlpst</entry>");
+        if (url.isEmpty()) throw new Exception("</entry key=\"url\">jdbc:as400:TB10</entry>");
+        if (user.isEmpty()) throw new Exception("<entry key=\"user\">ER</entry>");
+        if (pswd.isEmpty()) throw new Exception("<entry key=\"pswd\"></entry>");
+        if (driver.isEmpty()) throw new Exception("<entry key=\"driver\">com.ibm.as400.access.AS400JDBCDriver</entry>");
+        if (table.isEmpty()) throw new Exception("<entryy key=\"table\">gl_etlpst</entry>");
         if (!ef.isEmpty()) exclude_flds = ef.split(",");
         else exclude_flds = new String[0];
       }catch(Exception e){
@@ -133,7 +133,7 @@ public class run {
      }finally{
        if (r.conn != null) try{r.conn.close();}catch(Exception e){}
      }
-       System.out.println("�������");
+       System.out.println("успешно");
 	} 
 
 }
